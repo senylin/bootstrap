@@ -18,6 +18,7 @@ body {
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+    background: lightgrey;
 }
 a{
   cursor:pointer;
@@ -26,6 +27,7 @@ a{
     width: 960px !important;
     border:0px solid #ddd;
     border-radius: 2px;
+/*    background: url('../images/back.png');*/
   }
   .row{
     padding-left: 0px;
@@ -44,6 +46,7 @@ a{
     width: 100%;
     height:120px;
     border-bottom: 0px solid grey;
+/*    background: white;*/
   }
 .page-header .login{
    width: 100%;
@@ -54,9 +57,12 @@ a{
 .page-header .login ul{
   width: 100%;
   height: 100%;
-  margin-left: 5px;
+  margin-left: 0px;
     margin-right: 5px;
     padding-left:90%;
+    border-radius: 2px;
+     background: url('../images/main.jpg');
+           /*  background: lightgrey;*/
 }
 
   .page-header h1{
@@ -72,12 +78,14 @@ a{
     border-radius: 1px;
     width: 100%;
     height:45px;
-    border:1px solid #444444;
+         background: url('../images/back.png');
+         border: 0px;
+         border-radius: 2px;
   }
   .navbar-inverse li{
-    width:136.8px;
-    height: 44px;
-    border-radius: 1px;
+    width:137.1px;
+    height: 45px;
+    border-radius: 2px;
   }
   .navbar-inverse a{
 
@@ -111,12 +119,19 @@ a{
  }
  .content{
   margin-top: 0px;
+  background: white;
  }
  .menus{
-  margin-top: 10px;
+  margin-top: 20px;
   padding-right: 10px;
+    background: white;
  }
-
+ .menus .panel-default{
+  border-radius: 2px;
+ }
+ .menus .panel-heading{
+  
+ }
  .menus .panel-heading a{
   font-size: 22px;
  }
@@ -125,9 +140,16 @@ a{
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;      
+
  }
   .menus .panel-body a{
   font-size: 16px;
+ }
+ .menus .panel-body h4{
+  line-height: 20px;
+ /* text-indent: 2px;*/
+  letter-spacing: 1px;
+  font-weight: 100!important;
  }
  .news{
     margin-bottom: 5px!important;
@@ -147,10 +169,11 @@ a{
   padding-top: 2px;
  }
  .informations{
-  padding-top: 20px;
+ margin-top: 20px;
   padding-left: 20px!important;
   padding-right: 10px!important;
   border-radius: 3px;
+  background: white;
  }
  .informations .breadcrumb{
   border-radius: 2px;
@@ -160,6 +183,7 @@ a{
   border-bottom: 2px solid lightgray;
   height: 35px;
  }
+
   .informations .breadcrumb li{
     margin-left:10px;
 }
@@ -271,15 +295,15 @@ a{
  .links{
     position: fixed;
     width: 300px;
-    height: 350px;
+    height: auto;
     top:100%;
     left:50%;
     margin-left: 180px;
     margin-top:-50px;
-    border-radius: 5px;
-    border:1px solid lightgray;
+    border-radius: 9px; 
     background: white;
       overflow:hidden; 
+      border: 2px solid darkgray ;
  }
  .links .topic{
    position: relative;
@@ -289,38 +313,44 @@ a{
 /*   text-indent: 20px;*/
    font-size: 26px;
    line-height: 50px;
-   color:#444444;
+   color:white;
    font-weight: 900;
    font-family: 'KaiTi';
    letter-spacing: 10px;
-   border: 0px solid lightgray;
+   border: 0px solid grey;
    border-radius:2px;
+   background: url('../images/back.jpg');
  }
  .links .topic:hover{
-  box-shadow: 0px 0px 20px lightblue;
+  box-shadow: 0px 0px 20px #333;
   cursor: pointer;
  }
  .links ul{
   width: 100%;
   padding-left: 0px;
-  margin-top: 0px;
+  margin-top: 5px;
 
  }
  .links ul li{
   list-style: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 2px solid darkgray;
+  border-radius: 5px;
   float: left;
-  width: 80%;
-  margin-left: 10%;
- margin-right: 10%;
-  margin-top: 10px;
-  height:40px;
+  width: 100%;
+  padding-left: 10%;
+ padding-right: 10%;
+ /* margin-top: 10px;*/
+  height:50px;
   list-style-type:decimal;
   font-family: 'kaiti';
     font-size:18px;
     overflow:hidden; 
     text-overflow:ellipsis;
-    line-height: 40px;
+    line-height: 50px;
+ }
+ .links ul li a{
+  color:#333333;
+  font-weight: bold;
  }
 
 /* Custom page footer */
